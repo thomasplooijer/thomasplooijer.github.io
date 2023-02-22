@@ -6,11 +6,12 @@
   <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: true;">
     <!-- create your content here. just a box for now -->
     <a-entity
-        gltf-model="https://raw.githack.com/thomasplooijer/thomasplooijer.github.io/main/scene.gltf"
-        scale="5 5 5"
-        position="50 150 0"
-      >
-      </a-entity>
+          gltf-model="/scene.gltf"
+          scale="1 1 1"
+          rotation="0 180 0"
+          position="0 0.5 0"
+        >
+        </a-entity>
     <!-- define a camera which will move according to the marker position -->
     <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
