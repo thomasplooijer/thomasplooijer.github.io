@@ -3,16 +3,32 @@
 <!-- include ar.js for A-Frame -->
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: true;">
-    <!-- create your content here. just a box for now -->
-	<a-entity
-          gltf-model="/scene.gltf"
+  <a-scene
+    embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: true;"
+  >
+    <!-- a-nft is the anchor that defines an Image Tracking entity -->
+    <!-- on 'url' use the path to the Image Descriptors created before. -->
+    <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
+    
+    <a-nft
+      type="nft"
+      url="/ntf-files/download"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+        <a-entity
+          gltf-model="/gltf/crate_box/scene.gltf"
           scale="1 1 1"
           rotation="0 180 0"
           position="0 0.5 0"
         >
         </a-entity>
-    <!-- define a camera which will move according to the marker position -->
-    <a-marker-camera preset='hiro'></a-marker-camera>
+
+    </a-nft>
+    <!-- static camera that moves according to the device movemenents -->
+    <a-entity camera></a-entity>
   </a-scene>
 </body>
