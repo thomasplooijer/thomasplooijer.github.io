@@ -1,12 +1,26 @@
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
-<body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs='trackingMethod: best;'>
-      <a-anchor hit-testing-enabled='true'>
-      <a-gltf-model src="https://thomasplooijer.github.io/blob/c30dadca0aff46ef253c358bfd9ce5d1061ca048/scene.gltf" scale="0.10 0.10 0.10"></a-gltf-model>
-           <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-      </a-anchor>
-        <a-camera-static/>
-    </a-scene>
-</body>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cube</title>
+	<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
 
+</head>
+<body style="background-color: #000;">
+<a-scene>
+  <a-assets>
+    <a-asset-item id="cube" src="scene.gltf"></a-asset-item>
+   </a-assets>
+	<a-entity 
+		 gltf-model="#cube"
+		 position="0 1.43 -3" 
+		 scale="0.65 0.65 0.65">
+	  <a-animation 
+		   dur="4000" 
+		   attribute="rotation" 
+		   to="0 360 0" 
+		   repeat="indefinite">
+	    </a-animation>
+	</a-entity>
+</a-scene>
+</body>
+</html>
