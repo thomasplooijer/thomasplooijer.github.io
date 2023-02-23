@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Hello, WebVR! • A-Frame</title>
-    <meta name="description" content="Hello, WebVR! • A-Frame" />
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  </head>
-  <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
-      <a-marker preset="hiro">
-          <a-entity
-		  response-type="arraybuffer"
-          position="-1 0 0"
-          scale="0.01 0.01 0.01"
-          gltf-model="https://github.com/thomasplooijer/thomasplooijer.github.io/blob/main/scene.gltf"
-        ></a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='trackingMethod: best;'>
+      <a-anchor hit-testing-enabled='true'>
+      <a-gltf-model src="https://thomasplooijer.github.io/blob/c30dadca0aff46ef253c358bfd9ce5d1061ca048/scene.gltf" scale="0.10 0.10 0.10"></a-gltf-model>
+           <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+      </a-anchor>
+        <a-camera-static/>
     </a-scene>
-  </body>
-</html>
+</body>
+
