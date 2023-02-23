@@ -1,0 +1,11 @@
+Model Information:
+* title:	Trash Can - 3D scan Quixel Megascans
+* source:	https://sketchfab.com/3d-models/trash-can-3d-scan-quixel-megascans-f5acfe97343742b7b3127bcec6c8f15f
+* author:	Guay0 (https://sketchfab.com/Guay0)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Trash Can - 3D scan Quixel Megascans" (https://sketchfab.com/3d-models/trash-can-3d-scan-quixel-megascans-f5acfe97343742b7b3127bcec6c8f15f) by Guay0 (https://sketchfab.com/Guay0) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
